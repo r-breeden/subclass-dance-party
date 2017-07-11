@@ -41,5 +41,5 @@ $('.addLineUpButton').on('click', function(event) {
       window.dancers[item].lineUp
     // our height of the body window is this...
     // $('body').context.scrollingElement.clientHeight
-  });
+
 });
