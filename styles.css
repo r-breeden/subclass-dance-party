@@ -25,13 +25,28 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
-  position:absolute;
+  position:absolute; 
   
 }
 
-.dancerTwoStep {
-  
+.blinkyDancer {
+  position: absolute;
+  width: 175px;
+  height: auto;
 }
+
+.twoStepDancer:hover {
+  position: absolute;
+  width: 300px;
+  height: auto;
+}
+
+.twoStepDancer {
+  position: absolute; 
+  /* gif banana ; this method doesn't work*/
+  /*background-image: url("http://gph.is/2bizNeX");*/
+}
+
 .title, .lineUpDancerButton{
   padding:5px 12px;
   float:right;

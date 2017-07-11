@@ -2,7 +2,11 @@
 var TwoStepDancer = function( top, left, timeBetweenSteps ) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   //this.$node = $('<span class="twoStepDancer"></span>');
-  this.tracker = true; 
+  this.$node = $('<span class="twoStepDancer" > <img class="twoStepDancer" src="https://media.giphy.com/media/NL1WzYqdOduow/giphy.gif"</img> </span>');
+  //this.$node.addClass('twoStepDancer');
+  //this.$node.removeClass('dancer');
+  this.tracker = true;
+  this.setPosition(top, left);
 };
 
 //set the prototype
