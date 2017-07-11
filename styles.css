@@ -5,6 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url("https://i.ytimg.com/vi/VRpdoDuMHgE/maxresdefault.jpg");
+  background-repeat: no-repeat;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -24,4 +26,37 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  
 }
+
+.dancerTwoStep {
+  
+}
+.title, .lineUpDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+
+
+.dancerLine {
+  display: table-cell;
+  text-align: center;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  position: relative;
+  text-align: center;
+  flex-grow: 1;
+  */
+}
+
+/* flexbox 
+div.topbar {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;  
+} */

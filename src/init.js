@@ -29,17 +29,33 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
-  });
-});
 
-$('.addLineUpButton').on('click', function(event) {
+    window.dancers.push(dancer);
+  });
+
+  $('.lineUpDancerButton').on('click', function(event) {
     // var lineUpFunctionName = $(this).data('lineUp-function-name');
 
     // // get the maker function for the kind of dancer we're supposed to make
     // var lineUpMakerFunction = window[lineUpFunctionName];
-    for (var item = 0; item < window.dancers; item++)
-      window.dancers[item].lineUp
+    for (var item = 0; item < window.dancers.length; item++) {
+      window.dancers[item].lineUp();
+    } 
     // our height of the body window is this...
     // $('body').context.scrollingElement.clientHeight
+     
+  });
+  $('.lineOutDancerButton').on('click', function(event) {
+    // var lineUpFunctionName = $(this).data('lineUp-function-name');
 
+    // // get the maker function for the kind of dancer we're supposed to make
+    // var lineUpMakerFunction = window[lineUpFunctionName];
+    for (var item = 0; item < window.dancers.length; item++) {
+      window.dancers[item].lineOut();
+    } 
+    // our height of the body window is this...
+    // $('body').context.scrollingElement.clientHeight
+     
+  });
 });
+
