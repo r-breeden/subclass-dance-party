@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
+
      * As long as the "data-dancer-maker-function-name" attribute of a
      * class="addDancerButton" DOM node matches one of the names of the
      * maker functions available in the global scope, clicking that node
@@ -22,7 +23,7 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
