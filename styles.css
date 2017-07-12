@@ -35,6 +35,11 @@ body, a:link, a:visited, a:active{
   height: auto;
 }
 
+.blinkyDancer:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+}
+
 .twoStepDancer:hover {
   position: absolute;
   width: 300px;
@@ -64,6 +69,12 @@ body, a:link, a:visited, a:active{
   text-align: center;
   flex-grow: 1;
   */
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  
+  to {transform:rotate(360deg);}
 }
 
 /* flexbox 
